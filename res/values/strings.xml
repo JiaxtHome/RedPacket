@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">抢红包</string>
+    <string name="action_settings">Settings</string>
+    <string name="go_to_red_packet">去抢红包</string>
+    <string name="open">已打开</string>
+    <string name="close">已关闭</string>
+    <string name="activate">激活</string>
+    <string name="activated">已激活</string>
+    <string name="set">设置</string>
+    <string name="is_set">已设置</string>
+    <string name="set_accessibility">开启</string>
+    <string name="accessibility_open">已开启</string>
+    <string name="suggestion">***小提示***</string>
+    <string name="suggestion1">(1)请勾选“抢红包”激活</string>
+    <string name="suggestion2">(2)请不要屏蔽你想监听的QQ或微信群</string>
+    <string name="suggestion3">(3)请不要设置锁屏密码(改为滑动或无)</string>
+    <string name="suggestion4">(3)自动抢红包需开启权限</string>
+    <string name="redirect">自动抢微信红包(有封号风险)</string>
+    <string name="open_accessibility">找到"抢红包"，然后开启服务即可</string>
+
+</resources>

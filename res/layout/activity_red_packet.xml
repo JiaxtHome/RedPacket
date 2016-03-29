@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.xlgzs.redpacket.RedPacket" >
+
+    <RelativeLayout
+        android:id="@+id/total_switch_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.xlgzs.redpacket.CheckSwitchButton
+            android:id="@+id/total_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:enabled="true" />
+
+        <TextView
+            android:id="@+id/total_switch_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/open"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/total_switch_container"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/background_light" />
+
+    <RelativeLayout
+        android:id="@+id/redirect_switch_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1" >
+
+        <com.xlgzs.redpacket.CheckSwitchButton
+            android:id="@+id/redirect_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/redirect_switch_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/redirect"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/redirect_switch_container"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/background_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suggestion"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/activate"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_bg"
+                android:text="@string/activate" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/activate"
+                android:layout_alignParentLeft="true"
+                android:text="@string/suggestion1"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suggestion2"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/set_keyguard"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_bg"
+                android:text="@string/set"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@id/set_keyguard"
+                android:text="@string/suggestion3"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/set_accessibility"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_bg"
+                android:text="@string/set_accessibility" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@id/set_accessibility"
+                android:text="@string/suggestion4"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
